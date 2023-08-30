@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>Timer per il tempo attività</title>
+    <meta name="description"content="Usa il timer per qualsiasi attività">
+    <link rel="stylesheet" type="text/css" href="Timer.css"> <!--PERCORSO FILE CSS-->
+</head>
+
+<body>
+  <h1> Timer 🔔</h1> 
+
+<article>
+    <div>
+      <?xml version="1.0" encoding="utf-8"?>
+      <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.5em" height="22.5em" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve" class="svg-loader">
+         
+        <g>
+          <!-- Cerchio grigio sotto il secondo cerchio del conto alla rovescia -->
+          <circle fill="none" cx="6.25em" cy="6.25em" r="5em" class="gray" transform="scale(.8, .8) translate(25 25)"/>
+          <!-- cerchio del conto alla rovescia dei secondi -->
+          <circle id="seconds_circle" fill="none" cx="6.25em" cy="6.25em" r="5em" class="svg-loader_grow" role="progressbar" transform = "rotate(-89 100 100) scale(.8, .8) translate(25 25)" filter="url(#glow)"/>
+          <!-- Testo del conto alla rovescia dei secondi -->
+          <text id="second_text" text-align="center" x="1.3em" y="2.4em" font-family="'Open Sans', Verdana" font-size="3em" fill="#EBF0E7">:00</text>
+          <!-- Testo del conto alla rovescia dei minuti -->
+          <text id="minute_text" text-align="center" x="5.5em" y="4em" font-family="'Open Sans', Verdana" font-size="1em" fill="#EBF0E7">25</text>
+          <!-- Cerchio del conto alla rovescia dei minuti -->
+          <circle id="minutes_circle" fill="none" cx="6.25em" cy="6.25em" r="5em" class="svg-loader_grow" role="progressbar" transform = "rotate(-89 100 100) translate(0 200) scale(1, -1)" filter="url(#glow)"/>
+        </g>
+      </svg>
+    </div>
+    <div>
+      <h1 class="timerControls">
+        <span id="sub">-</span>
+        <span id="minuteCount"><i>25</i><br>
+          <span>Imposta Minuti</span>
+        </span>
+        <span id="plus">+</span> 
+      </h1>
+      
+      <button id="start">Start Timer</button>
+    </div>
+  </article>
+
+  <div class="container">
+    <div class="footer">&copy
+        <span id="year"></span>
+        Danygry - Tutti diritti riservati
+    </footer>
+</div>
+  <script src="Timer.js"></script>  <!--PERCORSO JS-->
+    </body>
+  </html>
+  
